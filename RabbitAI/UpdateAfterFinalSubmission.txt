@@ -1,0 +1,13 @@
+Update Log After Final 
+2020/5/25
+(Based on Rez's feedback):
+1. completely remove long switch in actionNode (I removed the long switch in decisionFactor before submitting final) 
+2. delete unused code
+3. add debug panel an alpha background 
+
+(most based on Dylan's feedback):
+1. Use Asset -> menu to create scriptable assets instead of Tools
+2. Debug log gameobject to enable clicking the debug information and locate the gameobject 
+3. Instead of doing a render manager to hide a rabbit. Hide the "top" of the mesh
+4. use a better format to join string: 
+        m_actionText.text = $"Current Action : {action.ActionDefinition.m_type}\nTarget: 	{action.Target}\nPercentage: {(int)(action.elapsedTime / 	action.ActionDefinition.m_duration * 100)}\nCurrentState: {action.State}";

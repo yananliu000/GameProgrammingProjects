@@ -1,0 +1,86 @@
+<root>
+  <actionDefinition type="kEat" duration="2">
+    <beginNodesList>
+      <beginNode nodeType="kPlayAnimation" animName="Eat" />
+    </beginNodesList>
+    <endNodesList>
+      <endNode nodeType="kStatModify" statType="kHunger" value="30" />
+    </endNodesList>
+    <decisionFactors>
+      <decisionFactorType>kDistance</decisionFactorType>
+      <decisionFactorType>kHunger</decisionFactorType>
+    </decisionFactors>
+  </actionDefinition>
+  <actionDefinition type="kDrink" duration="2">
+    <beginNodesList>
+      <beginNode nodeType="kPlayAnimation" animName="Eat" />
+    </beginNodesList>
+    <endNodesList>
+      <endNode nodeType="kStatModify" statType="kThirsty" value="30" />
+    </endNodesList>
+    <decisionFactors>
+      <decisionFactorType>kDistance</decisionFactorType>
+      <decisionFactorType>kThirsty</decisionFactorType>
+    </decisionFactors>
+  </actionDefinition>
+  <actionDefinition type="kSleep" duration="10">
+    <beginNodesList>
+      <beginNode nodeType="kPlayAnimation" animName="Idle" />
+    </beginNodesList>
+    <endNodesList>
+      <endNode nodeType="kStatModify" statType="kEnergy" value="70" />
+    </endNodesList>
+    <decisionFactors>
+      <decisionFactorType>kDistance</decisionFactorType>
+      <decisionFactorType>kEnergy</decisionFactorType>
+    </decisionFactors>
+  </actionDefinition>
+  <actionDefinition type="kPlay" duration="5">
+    <beginNodesList>
+      <beginNode nodeType="kPlayAnimation" animName="Damage" />
+    </beginNodesList>
+    <endNodesList>
+      <endNode nodeType="kStatModify" statType="kFun" value="50" />
+    </endNodesList>
+    <decisionFactors>
+      <decisionFactorType>kDistance</decisionFactorType>
+      <decisionFactorType>kFun</decisionFactorType>
+    </decisionFactors>
+  </actionDefinition>
+  <actionDefinition type="kBath" duration="4">
+    <beginNodesList>
+      <beginNode nodeType="kPlayAnimation" animName="Damage" />
+    </beginNodesList>
+    <endNodesList>
+      <endNode nodeType="kStatModify" statType="kHygiene" value="50" />
+    </endNodesList>
+    <decisionFactors>
+      <decisionFactorType>kDistance</decisionFactorType>
+      <decisionFactorType>kHygiene</decisionFactorType>
+    </decisionFactors>
+  </actionDefinition>
+  <actionDefinition type="kPooPoo" duration="3.5">
+    <beginNodesList>
+      <beginNode nodeType="kPlayAnimation" animName="Idle" />
+    </beginNodesList>
+    <endNodesList>
+      <endNode nodeType="kStatModify" statType="kBladder" value="100" />
+    </endNodesList>
+    <decisionFactors>
+      <decisionFactorType>kDistance</decisionFactorType>
+      <decisionFactorType>kBladder</decisionFactorType>
+    </decisionFactors>
+  </actionDefinition>
+  <actionDefinition type="kTalk" duration="3">
+    <beginNodesList>
+      <beginNode nodeType="kPlayAnimation" animName="Damage" />
+    </beginNodesList>
+    <endNodesList>
+      <endNode nodeType="kStatModify" statType="kSocial" value="30" />
+    </endNodesList>
+    <decisionFactors>
+      <decisionFactorType>kDistance</decisionFactorType>
+      <decisionFactorType>kSocial</decisionFactorType>
+    </decisionFactors>
+  </actionDefinition>
+</root>
