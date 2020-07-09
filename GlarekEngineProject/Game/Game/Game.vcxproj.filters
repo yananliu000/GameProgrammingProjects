@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{cc2c8e3f-c3c2-4a99-8f47-9ece98b39a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic">
+      <UniqueIdentifier>{562eed4b-142f-48c1-ac57-983d39fa3f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application">
+      <UniqueIdentifier>{4f1ef178-be2a-4ba1-a1ed-96a16140fac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\View">
+      <UniqueIdentifier>{82941e67-c11b-4814-9a43-ee86c959a8e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Logic\GlarekGameLogic.cpp">
+      <Filter>Source\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GlarekApplicationLayer.cpp">
+      <Filter>Source\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\View\PlayerView.cpp">
+      <Filter>Source\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Toolset\Includes\Tinyxml2\tinyxml2.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Logic\GlarekGameLogic.h">
+      <Filter>Source\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GlarekApplicationLayer.h">
+      <Filter>Source\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\View\PlayerView.h">
+      <Filter>Source\View</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Asset\XML\Actor\BlueMonster.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Asset\XML\Actor\CollisionObject.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Asset\XML\Actor\RedMonster.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Asset\XML\Actor\Tile.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

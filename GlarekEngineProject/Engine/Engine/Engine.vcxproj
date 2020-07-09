@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Toolset\Includes\Tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="SFMLSprite.cpp" />
+    <ClCompile Include="SFMLTexture.cpp" />
+    <ClCompile Include="Source\Application\ApplicationLayer.cpp" />
+    <ClCompile Include="Source\Application\Audio\IAudio.cpp" />
+    <ClCompile Include="Source\Application\Audio\SDLAudio.cpp" />
+    <ClCompile Include="Source\Application\Audio\SFMLAudio.cpp" />
+    <ClCompile Include="Source\Application\Graphic\IGraphic.cpp" />
+    <ClCompile Include="Source\Application\Graphic\SDLGraphic.cpp" />
+    <ClCompile Include="Source\Application\Graphic\SFMLGraphic.cpp" />
+    <ClCompile Include="Source\Application\Input\IKeyboard.cpp" />
+    <ClCompile Include="Source\Application\Input\IMouse.cpp" />
+    <ClCompile Include="Source\Application\System\IOSSystem.cpp" />
+    <ClCompile Include="Source\Application\System\ISystem.cpp" />
+    <ClCompile Include="Source\Application\System\WINSystem.cpp" />
+    <ClCompile Include="Source\Application\Window\SDLWindow.cpp" />
+    <ClCompile Include="Source\Application\Window\SFMLWindow.cpp" />
+    <ClCompile Include="Source\Game\Actor\Actor.cpp" />
+    <ClCompile Include="Source\Game\Actor\ActorFactory.cpp" />
+    <ClCompile Include="Source\Game\Component\CollisionHandlerComponent.cpp" />
+    <ClCompile Include="Source\Game\Component\IComponent.cpp" />
+    <ClCompile Include="Source\Game\Component\PhysicsComponent.cpp" />
+    <ClCompile Include="Source\Game\Component\SpriteRenderComponent.cpp" />
+    <ClCompile Include="Source\Game\Component\TransformComponent.cpp" />
+    <ClCompile Include="Source\Game\Event\EventDispatcher.cpp" />
+    <ClCompile Include="Source\Game\Physics\ContactListener.cpp" />
+    <ClCompile Include="Source\Game\Physics\IPhysics.cpp" />
+    <ClCompile Include="Source\Game\Physics\PhysicsVisualDebug.cpp" />
+    <ClCompile Include="Source\Game\Process\DanceProcess.cpp" />
+    <ClCompile Include="Source\Game\Process\IProcess.cpp" />
+    <ClCompile Include="Source\Game\Process\ProcessManager.cpp" />
+    <ClCompile Include="Source\Logic\IGameLayer.cpp" />
+    <ClCompile Include="Source\Lua\LuaManager.cpp" />
+    <ClCompile Include="Source\Resource\Resource.cpp" />
+    <ClCompile Include="Source\Resource\ResourceFile.cpp" />
+    <ClCompile Include="Source\Utility\MyLogger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Application\ApplicationLayer.h" />
+    <ClInclude Include="Source\Application\Audio\IAudio.h" />
+    <ClInclude Include="Source\Application\Audio\SDLAudio.h" />
+    <ClInclude Include="Source\Application\Audio\SFMLAudio.h" />
+    <ClInclude Include="Source\Application\Graphic\IGraphic.h" />
+    <ClInclude Include="Source\Application\Graphic\SDLGraphic.h" />
+    <ClInclude Include="Source\Application\Graphic\SFMLGraphic.h" />
+    <ClInclude Include="Source\Application\Input\IKeyboard.h" />
+    <ClInclude Include="Source\Application\Input\IMouse.h" />
+    <ClInclude Include="Source\Application\System\IOSSystem.h" />
+    <ClInclude Include="Source\Application\System\ISystem.h" />
+    <ClInclude Include="Source\Application\System\WINSystem.h" />
+    <ClInclude Include="Source\Application\Texture\ISprite.h" />
+    <ClInclude Include="Source\Application\Texture\ITexture.h" />
+    <ClInclude Include="Source\Application\Texture\SDLSprite.h" />
+    <ClInclude Include="Source\Application\Texture\SDLTexture.h" />
+    <ClInclude Include="Source\Application\Texture\SFMLSprite.h" />
+    <ClInclude Include="Source\Application\Texture\SFMLTexture.h" />
+    <ClInclude Include="Source\Application\View\IView.h" />
+    <ClInclude Include="Source\Application\Window\IWindow.h" />
+    <ClInclude Include="Source\Application\Window\SDLWindow.h" />
+    <ClInclude Include="Source\Application\Window\SFMLWindow.h" />
+    <ClInclude Include="Source\Game\Actor\Actor.h" />
+    <ClInclude Include="Source\Game\Actor\ActorFactory.h" />
+    <ClInclude Include="Source\Game\Component\CollisionHandlerComponent.h" />
+    <ClInclude Include="Source\Game\Component\IComponent.h" />
+    <ClInclude Include="Source\Game\Component\PhysicsComponent.h" />
+    <ClInclude Include="Source\Game\Component\SpriteRenderComponent.h" />
+    <ClInclude Include="Source\Game\Component\TransformComponent.h" />
+    <ClInclude Include="Source\Game\Event\AttackEvent.h" />
+    <ClInclude Include="Source\Game\Event\ConsumeItemEvent.h" />
+    <ClInclude Include="Source\Game\Event\CreateActorEvent.h" />
+    <ClInclude Include="Source\Game\Event\DefeatEnemyEvent.h" />
+    <ClInclude Include="Source\Game\Event\EventDispatcher.h" />
+    <ClInclude Include="Source\Game\Event\ExitGameEvent.h" />
+    <ClInclude Include="Source\Game\Event\IEvent.h" />
+    <ClInclude Include="Source\Game\Event\PickUpItemEvent.h" />
+    <ClInclude Include="Source\Game\Physics\ContactListener.h" />
+    <ClInclude Include="Source\Game\Physics\IPhysics.h" />
+    <ClInclude Include="Source\Game\Physics\PhysicsVisualDebug.h" />
+    <ClInclude Include="Source\Game\Process\DanceProcess.h" />
+    <ClInclude Include="Source\Game\Process\DelayProcess.h" />
+    <ClInclude Include="Source\Game\Process\IProcess.h" />
+    <ClInclude Include="Source\Game\Process\ProcessManager.h" />
+    <ClInclude Include="Source\Logic\IGameLayer.h" />
+    <ClInclude Include="Source\Lua\LuaManager.h" />
+    <ClInclude Include="Source\Math\Vector2.h" />
+    <ClInclude Include="Source\Resource\Resource.h" />
+    <ClInclude Include="Source\Resource\ResourceFile.h" />
+    <ClInclude Include="Source\Utility\Common.h" />
+    <ClInclude Include="Source\Utility\MyLogger.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{61198164-EE72-4BFD-B618-92E16B9693AD}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Toolset\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SDL;SFML_STATIC;  _SFML_SFML_SFML;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>Lua_5.3.5.lib;sfml-audio-s-d.lib;box2d-d.lib;zlibstat-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;winmm.lib;gdi32.lib;flac.lib;openal32.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)Libs\$(Platform)_$(Configuration)\*.* $(SolutionDir)..\Game\Game\Builds\$(Platform)_$(Configuration)\ /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Toolset\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SDL;SFML_STATIC;  _SFML_SFML_SFML;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>Lua_5.3.5.lib;sfml-audio-s-d.lib;box2d-d.lib;zlibstat-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;winmm.lib;gdi32.lib;flac.lib;openal32.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)Libs\$(Platform)_$(Configuration)\*.* $(SolutionDir)..\Game\Game\Builds\$(Platform)_$(Configuration)\ /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Toolset\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SDL;SFML_STATIC;  _SFML_SFML_SFML;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Lua_5.3.5.lib;winmm.lib;sfml-system-s.lib;openal32.lib;gdi32.lib;sfml-window-s.lib;sfml-audio-s.lib;box2d.lib;zlibstat.lib;sfml-graphics-s.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll $(SolutionDir)..\Game\Game\Builds\$(Platform)_$(Configuration)\ /y /d
+xcopy $(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\Game\Game\Builds\$(Platform)_$(Configuration)\ /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Toolset\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SDL;SFML_STATIC;  _SFML_SFML_SFML;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Shell32.lib;Lua_5.3.5.lib;winmm.lib;sfml-system-s.lib;openal32.lib;gdi32.lib;sfml-window-s.lib;sfml-audio-s.lib;box2d.lib;zlibstat.lib;sfml-graphics-s.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;freetype.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll $(SolutionDir)..\Game\Game\Builds\$(Platform)_$(Configuration)\ /y /d
+xcopy $(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\Game\Game\Builds\$(Platform)_$(Configuration)\ /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Application">
+      <UniqueIdentifier>{dd04f4c6-29fb-4618-8e13-7e0a156ab7c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Audio">
+      <UniqueIdentifier>{42c5128a-33e8-4ec0-bd44-a1d8261a1244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Graphic">
+      <UniqueIdentifier>{d4f8e27e-b51e-41c2-ab26-da3bdc56bd06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Input">
+      <UniqueIdentifier>{a6a7014b-a0af-4d1b-861d-336bf589a9d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\System">
+      <UniqueIdentifier>{4ee3bc8b-a860-4284-92c6-b7a217e7f6f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Texture">
+      <UniqueIdentifier>{41c963d2-83ae-4dfb-a5e7-e51250754bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\View">
+      <UniqueIdentifier>{8f874220-5e28-4ef4-bdfe-d8fb39f59f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Window">
+      <UniqueIdentifier>{6d960067-aa09-4576-a740-8bd08e17d7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game">
+      <UniqueIdentifier>{94429c56-80d9-4ce9-a4b3-aee7d82be355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Actor">
+      <UniqueIdentifier>{3cea28ef-46a4-4c11-9c64-2ab69861f56e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Component">
+      <UniqueIdentifier>{7b97d2d6-9238-4988-90f9-f726cbd027e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Event">
+      <UniqueIdentifier>{1c9f5200-4fa1-44f0-9b9b-bb7094da2cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Process">
+      <UniqueIdentifier>{40c29b3f-0b9c-400b-aa01-a1d3ac467104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lua">
+      <UniqueIdentifier>{576962fb-0628-4cbf-a71d-2ef6f50dc049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utility">
+      <UniqueIdentifier>{a09e4500-857c-4016-bd1c-03747e5f6b7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Math">
+      <UniqueIdentifier>{800a22a3-864e-470f-97d3-f338ded841bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource">
+      <UniqueIdentifier>{7f030a99-26db-4687-9a57-f127943a9ee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic">
+      <UniqueIdentifier>{9eeb9a46-6fa2-4f74-a826-b8f2afe91d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Physics">
+      <UniqueIdentifier>{f735e6fd-72e1-4e1e-a6bf-64550d833911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Application\ApplicationLayer.cpp">
+      <Filter>Source\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Graphic\IGraphic.cpp">
+      <Filter>Source\Application\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Graphic\SDLGraphic.cpp">
+      <Filter>Source\Application\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Graphic\SFMLGraphic.cpp">
+      <Filter>Source\Application\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Audio\IAudio.cpp">
+      <Filter>Source\Application\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Audio\SDLAudio.cpp">
+      <Filter>Source\Application\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Audio\SFMLAudio.cpp">
+      <Filter>Source\Application\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Window\SDLWindow.cpp">
+      <Filter>Source\Application\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Window\SFMLWindow.cpp">
+      <Filter>Source\Application\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\System\ISystem.cpp">
+      <Filter>Source\Application\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Input\IKeyboard.cpp">
+      <Filter>Source\Application\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Input\IMouse.cpp">
+      <Filter>Source\Application\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\ResourceFile.cpp">
+      <Filter>Source\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\System\IOSSystem.cpp">
+      <Filter>Source\Application\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\System\WINSystem.cpp">
+      <Filter>Source\Application\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\IGameLayer.cpp">
+      <Filter>Source\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utility\MyLogger.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Actor\Actor.cpp">
+      <Filter>Source\Game\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Actor\ActorFactory.cpp">
+      <Filter>Source\Game\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Component\CollisionHandlerComponent.cpp">
+      <Filter>Source\Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Component\IComponent.cpp">
+      <Filter>Source\Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Component\PhysicsComponent.cpp">
+      <Filter>Source\Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Component\SpriteRenderComponent.cpp">
+      <Filter>Source\Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Component\TransformComponent.cpp">
+      <Filter>Source\Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Event\EventDispatcher.cpp">
+      <Filter>Source\Game\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Process\DanceProcess.cpp">
+      <Filter>Source\Game\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Process\IProcess.cpp">
+      <Filter>Source\Game\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Process\ProcessManager.cpp">
+      <Filter>Source\Game\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Physics\ContactListener.cpp">
+      <Filter>Source\Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Physics\IPhysics.cpp">
+      <Filter>Source\Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Physics\PhysicsVisualDebug.cpp">
+      <Filter>Source\Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Toolset\Includes\Tinyxml2\tinyxml2.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Resource.cpp">
+      <Filter>Source\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Lua\LuaManager.cpp">
+      <Filter>Source\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="SFMLTexture.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SFMLSprite.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Application\ApplicationLayer.h">
+      <Filter>Source\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Graphic\IGraphic.h">
+      <Filter>Source\Application\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Graphic\SDLGraphic.h">
+      <Filter>Source\Application\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Graphic\SFMLGraphic.h">
+      <Filter>Source\Application\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Audio\IAudio.h">
+      <Filter>Source\Application\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Audio\SDLAudio.h">
+      <Filter>Source\Application\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Audio\SFMLAudio.h">
+      <Filter>Source\Application\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Window\IWindow.h">
+      <Filter>Source\Application\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Window\SDLWindow.h">
+      <Filter>Source\Application\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Window\SFMLWindow.h">
+      <Filter>Source\Application\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\View\IView.h">
+      <Filter>Source\Application\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Texture\ISprite.h">
+      <Filter>Source\Application\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Texture\ITexture.h">
+      <Filter>Source\Application\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Texture\SDLSprite.h">
+      <Filter>Source\Application\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Texture\SDLTexture.h">
+      <Filter>Source\Application\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Texture\SFMLSprite.h">
+      <Filter>Source\Application\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Texture\SFMLTexture.h">
+      <Filter>Source\Application\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\System\ISystem.h">
+      <Filter>Source\Application\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Input\IKeyboard.h">
+      <Filter>Source\Application\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Input\IMouse.h">
+      <Filter>Source\Application\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\ResourceFile.h">
+      <Filter>Source\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Math\Vector2.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utility\Common.h">
+      <Filter>Source\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\System\IOSSystem.h">
+      <Filter>Source\Application\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\System\WINSystem.h">
+      <Filter>Source\Application\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\IGameLayer.h">
+      <Filter>Source\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utility\MyLogger.h">
+      <Filter>Source\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Actor\Actor.h">
+      <Filter>Source\Game\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Actor\ActorFactory.h">
+      <Filter>Source\Game\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Component\CollisionHandlerComponent.h">
+      <Filter>Source\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Component\IComponent.h">
+      <Filter>Source\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Component\PhysicsComponent.h">
+      <Filter>Source\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Component\SpriteRenderComponent.h">
+      <Filter>Source\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Component\TransformComponent.h">
+      <Filter>Source\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\CreateActorEvent.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\EventDispatcher.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\IEvent.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Process\DanceProcess.h">
+      <Filter>Source\Game\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Process\DelayProcess.h">
+      <Filter>Source\Game\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Process\IProcess.h">
+      <Filter>Source\Game\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Process\ProcessManager.h">
+      <Filter>Source\Game\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Physics\ContactListener.h">
+      <Filter>Source\Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Physics\IPhysics.h">
+      <Filter>Source\Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Physics\PhysicsVisualDebug.h">
+      <Filter>Source\Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\AttackEvent.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\ConsumeItemEvent.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\DefeatEnemyEvent.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\ExitGameEvent.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Event\PickUpItemEvent.h">
+      <Filter>Source\Game\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\Resource.h">
+      <Filter>Source\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Lua\LuaManager.h">
+      <Filter>Source\Lua</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

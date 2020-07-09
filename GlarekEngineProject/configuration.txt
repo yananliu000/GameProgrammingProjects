@@ -1,0 +1,37 @@
+$(ProjectDir)Libs\$(Platform)_$(Configuration)\
+$(ProjectDir)Temp\$(Platform)_$(Configuration)\
+Static library (.lib)
+$(SolutionDir)..\Engine\Engine\Source
+$(SolutionDir)..\Engine\Engine\Libs\$(Platform)_$(Configuration)
+Engine.lib
+
+submit: vcx, sln, source
+
+$(SolutionDir)..\Toolset\Includes;%(AdditionalIncludeDirectories)
+
+release:
+sfml-graphics.lib;sfml-window.lib;sfml-system.lib;Box2d.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;%(AdditionalDependencies)
+
+debug:
+sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;Box2d.lib;SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;OpenGL32.lib;glu32.lib;vld.lib;%(AdditionalDependencies)
+
+
+Preprocessor: _SFML;_SDL;SFML_STATIC
+
+$(SolutionDir)..\Toolset\Bins\$(PlatformShortName);%(AdditionalLibraryDirectories)
+
+
+Export:
+Engine => dll
+	=> output .lib (need tag: __declspec(dllexport))
+	post build event: xcopy $(ProjectDir)Libs\$(Platform)_$(Configuration)\*.* $(SolutionDir)..\Game\Game\Builds\$(Platform)_$(Configuration)\ /y /d
+
+get or set path from visual studio:
+	"Game" project, properties, Debugging :"Command Arguments"
+	Temp\$(Platform)_$(Configuration)\
+
+resource packer
+debugging command arguments :"$(ProjectDir)..\..\Game\Game\Assets" "$(ProjectDir)..\..\Game\Game\resource.bin"
+set as startup proj
+	reading: how the resource.bin, use this
+	saving: 
